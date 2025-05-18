@@ -1,12 +1,4 @@
-flask
 torch
-torchvision
-pillow
-numpy
-opencv-python-headless
-pyyaml
-matplotlib
-requests
-scipy
-tqdm
-seaborn
+opencv-python
+Pillow
+gradio
