@@ -1,13 +1,12 @@
-flask>=2.0.0
-torch>=1.7.0
-torchvision>=0.8.1
+flask
+torch
+torchvision
 pillow
 numpy
 opencv-python-headless
 pyyaml
-requests
 matplotlib
+requests
+scipy
 tqdm
 seaborn
-scipy
-ultralytics  # Optional: if you use `yolov5` as a pip package instead of git clone
