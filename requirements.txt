@@ -1,9 +1,12 @@
-flask>=2.0.0
-torch>=1.7.0
-torchvision>=0.8.1
-pillow
-numpy
-opencv-python-headless
-pyyaml
-requests
-matplotlib
+services:
+  - type: web
+    name: yolo-api
+    env: python
+    buildCommand: |
+      git clone https://github.com/ultralytics/yolov5.git
+      pip install -r requirements.txt
+      pip install -r yolov5/requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "TRUE"
