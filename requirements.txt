@@ -1,5 +1,9 @@
-flask
-torch
+flask>=2.0.0
+torch>=1.7.0
+torchvision>=0.8.1
 pillow
 numpy
 opencv-python-headless
+pyyaml
+requests
+matplotlib
