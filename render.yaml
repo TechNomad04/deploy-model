@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: yolov5-flask-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: TORCH_HOME
+        value: /opt/render/project/.torch
