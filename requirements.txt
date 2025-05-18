@@ -1,12 +1,13 @@
-services:
-  - type: web
-    name: yolo-api
-    env: python
-    buildCommand: |
-      git clone https://github.com/ultralytics/yolov5.git
-      pip install -r requirements.txt
-      pip install -r yolov5/requirements.txt
-    startCommand: python app.py
-    envVars:
-      - key: PYTHONUNBUFFERED
-        value: "TRUE"
+flask>=2.0.0
+torch>=1.7.0
+torchvision>=0.8.1
+pillow
+numpy
+opencv-python-headless
+pyyaml
+requests
+matplotlib
+tqdm
+seaborn
+scipy
+ultralytics  # Optional: if you use `yolov5` as a pip package instead of git clone
